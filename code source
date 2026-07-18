@@ -1,0 +1,50 @@
+import numpy as np
+
+class CubeStockageOptique:
+    """
+    Simulation de l'unité de stockage à faible coût énergétique de David Tremblay-Duval.
+    Modélise un cube de stockage géométrique tridimensionnel de 256 bits.
+    """
+    def __init__(self):
+        self.inventeur = "David Tremblay-Duval"
+        self.nom_projet = "Langage de Programmation Universel & Stockage Optique"
+        self.capacite_bits = 256
+        
+        # Structure 3D du cube : 4x4x4 blocs. Chaque bloc contient 4 bits (4x4x4x4 = 256 bits)
+        # 0 représente l'état 'OFF', 1 représente l'état 'ON' (activé par laser/optique)
+        self.matrice_cube = np.zeros((4, 4, 4, 4), dtype=int)
+        print(f"--- {self.nom_projet} ---")
+        print(f"Créé par : {self.inventeur}")
+        print(f"Cube initialisé avec succès ({self.capacite_bits} bits disponibles, tous à l'état OFF).\n")
+
+    def appliquer_laser(self, x, y, z, index_bit, etat="ON"):
+        """Simule l'impulsion d'un laser optique pour écrire un état ON ou OFF."""
+        if etat.upper() == "ON":
+            self.matrice_cube[x, y, z, index_bit] = 1
+            print(f"[LASER ACTIVÉ] Écriture réussie à la coordonnée ({x}, {y}, {z}) [Bit {index_bit}] -> État: ON")
+        else:
+            self.matrice_cube[x, y, z, index_bit] = 0
+            print(f"[LASER DÉSACTIVÉ] Écriture réussie à la coordonnée ({x}, {y}, {z}) [Bit {index_bit}] -> État: OFF")
+
+    def afficher_statistiques_energie(self, taille_donnees_mo):
+        """Calcule le nombre de cubes nécessaires selon les formules mathématiques de David."""
+        bits_totaux = taille_donnees_mo * 8_000_000
+        cubes_necessaires = bits_totaux / self.capacite_bits
+        
+        print("\n--- CALCULATEUR DE VOLUME GÉOMÉTRIQUE (Formules de David) ---")
+        print(f"Pour stocker {taille_donnees_mo} Mo ({bits_totaux} bits) :")
+        print(f"-> Nombre de cubes de 256 bits requis : {int(cubes_necessaires)} cubes")
+        print("-> Consommation énergétique estimée : Ultra-faible (Technologie Optique Constante)")
+
+# --- EXÉCUTION DE LA SIMULATION ---
+if __name__ == "__main__":
+    # 1. Initialisation du cube au nom de l'inventeur
+    mon_cube = CubeStockageOptique()
+    
+    # 2. Simulation d'écriture optique (activation de géométries par laser)
+    mon_cube.appliquer_laser(x=0, y=1, z=2, index_bit=3, etat="ON")
+    mon_cube.appliquer_laser(x=3, y=3, z=0, index_bit=1, etat="ON")
+    mon_cube.appliquer_laser(x=0, y=1, z=2, index_bit=3, etat="OFF") # Remise à l'état OFF
+    
+    # 3. Application de vos formules mathématiques pour 1 Mo de données
+    mon_cube.afficher_statistiques_energie(taille_donnees_mo=1)

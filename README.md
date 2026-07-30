@@ -1,1 +1,18 @@
-Projet : Unité de stockage à faible coût énergétique et langage universelInventeur : David Tremblay-DuvalConcept : Stockage tridimensionnel par cube de 256 bits, activé par optique ou laser (États ON/OFF).Capacité de base : 1 Cube = 256 bits (offrant 256 possibilités géométriques/caractères).Équivalence de volume :1 Mo (Mégaoctet) = 8 000 000 bits.Pour stocker 1 Mo, il faut : 8 000 000 ÷ 256 = 31 250 cubes de 256 bits.Matrice de calcul : 6 × 256 bits = 1536 bits.
+Projet : Unité de stockage à faible coût énergétique et langage universelInventeur : David Tremblay-DuvalConcept : Stockage tridimensionnel par cube de 256 bits, activé par optique ou laser (États ON/OFF).Capacité de base : 1 Cube = 256 bits (offrant 256 possibilités géométriques/caractères).Équivalence de volume :1 Mo (Mégaoctet) = 8 000 000 bits.Pour stocker 1 Mo, il faut : 8 000 000 ÷ 256 = 31 250 cubes de 256 bits.Matrice de calcul : 6 × 256 bits = 1536 Voici la version prête à copier :
+
+LICENCE DE DROIT D’AUTEUR David Tremblay Duval – Jarvis Kernel Inc.
+Copyright © 2026 David Tremblay Duval, agissant pour le compte de Jarvis Kernel Inc. Tous droits réservés.
+1. Titularité des droits L’ensemble des contenus, éléments graphiques, logos, textes, documentations, logiciels, codes sources, interfaces, marques, dessins, modèles et tout autre élément protégé par le droit d’auteur ou par tout autre droit de propriété intellectuelle (ci-après collectivement dénommés « le Contenu »), sont et demeurent la propriété exclusive de David Tremblay Duval et/ou de Jarvis Kernel Inc.
+2. Interdiction d’utilisation Sauf autorisation écrite, préalable et expresse de David Tremblay Duval, il est strictement interdit à quiconque de :
+	•	reproduire, représenter, diffuser, publier, communiquer au public, distribuer, transmettre ou rendre accessible le Contenu, en tout ou en partie, par quelque moyen que ce soit ;
+	•	modifier, adapter, traduire, arranger, transformer ou créer des œuvres dérivées à partir du Contenu ;
+	•	extraire, décompiler, désassembler, procéder à de l’ingénierie inverse ou tenter d’accéder au code source (le cas échéant) ;
+	•	utiliser le Contenu à des fins commerciales, promotionnelles, publicitaires ou non commerciales ;
+	•	retirer, modifier ou altérer les mentions de droit d’auteur, de marque ou tout autre signe distinctif.
+3. Sanctions Toute violation des présentes dispositions constitue une contrefaçon au sens du Code de la propriété intellectuelle et pourra donner lieu à des poursuites civiles et/ou pénales, ainsi qu’à l’allocation de dommages-intérêts.
+4. Autorisations Toute demande d’autorisation d’utilisation du Contenu doit être adressée par écrit à David Tremblay Duval – Jarvis Kernel Inc.
+5. Droit applicable Les présentes dispositions sont régies par le droit québécois et canadien applicable en matière de propriété intellectuelle. Tout litige relatif à leur interprétation ou à leur exécution sera soumis aux tribunaux compétents du district judiciaire de [à compléter].
+
+Notice courte :
+© 2026 David Tremblay Duval – Jarvis Kernel Inc. Tous droits réservés. Toute reproduction ou utilisation non autorisée est strictement interdite.
+
